@@ -21,4 +21,8 @@
     #profile-text-container h1 {
         font-size: 2rem;
     }
+
+    #socials-container {
+        gap: 1.75rem;
+    }
 }
