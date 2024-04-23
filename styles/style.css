@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@100..900&display=swap");
+
+:root {
+    --primary-background-color: #232323;
+
+    --primary-foreground-color: #ffffff;
+    --secondary-foreground-color: #a0a0a0;
+    --tertiary-foreground-color: #707070;
+
+    --primary-font-family: "Inter", sans-serif;
+    --secondary-font-family: "DM Mono", monospace;
+}
+
+html,
+body {
+    font-family: var(--primary-font-family);
+    background-color: var(--primary-background-color);
+    color: var(--primary-foreground-color);
+    height: 100%;
+    width: 100%;
+}
+
+html,
+body,
+main > *,
+#content > *,
+#content #general-info > p,
+#location > p {
+    margin: 0;
+    padding: 0;
+}
+
+main,
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#time {
+    margin-top: 2rem;
+}
+
+#location {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#time,
+#location {
+    font-family: var(--secondary-font-family);
+    color: var(--tertiary-foreground-color);
+    font-size: 0.9rem;
+}
+
+#content #profile-picture {
+    height: 7.5rem;
+    border-radius: 100%;
+}
+
+#content #general-info {
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#content #general-info #name {
+    font-size: 1.5rem;
+}
+
+#content #general-info #occupation {
+    color: var(--secondary-foreground-color);
+    margin-top: 0.6rem;
+    font-size: 1.25rem;
+}
+
+#content #social {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#content #social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+}
+
+#content #social img {
+    width: 100%;
+}
+
+.invert-svg {
+    filter: invert(0.5);
+}
