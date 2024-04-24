@@ -39,23 +39,17 @@ main,
     height: 100%;
 }
 
-#time {
-    margin-top: 2rem;
-}
-
-#location {
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 #time,
-#location {
+#location p,
+#location a {
     font-family: var(--secondary-font-family);
     color: var(--tertiary-foreground-color);
     font-size: 0.9rem;
+    text-decoration: none;
+}
+
+#time {
+    margin-top: 2rem;
 }
 
 #content #profile-picture {
@@ -101,6 +95,13 @@ main,
     width: 100%;
 }
 
-.invert-svg {
+#content #social img[alt="GitHub"] {
     filter: invert(0.5);
+}
+
+#location {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

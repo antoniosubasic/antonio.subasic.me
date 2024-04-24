@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Antonio Subašić</title>
         <link rel="icon" href="./images/tabicon.png" />
-        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./style.css" />
         <script type="module" src="./scripts/script.js" defer></script>
     </head>
 
@@ -17,6 +17,7 @@
                 <img
                     id="profile-picture"
                     src="https://avatars.githubusercontent.com/u/96651154"
+                    alt="Profile Picture"
                 />
                 <div id="general-info">
                     <p id="name">Antonio Subašić</p>
@@ -24,14 +25,21 @@
                 </div>
                 <div id="social">
                     <a href="https://github.com/antoniosubasic">
-                        <img src="./images/github.svg" class="invert-svg" />
+                        <img src="./images/github.svg" alt="GitHub" />
                     </a>
                 </div>
             </div>
-            <div id="location">
-                <p data-value="Leonding, Austria · 48.26840° N, 14.25177° E">
-                    Leonding, Austria · 48.26840° N, 14.25177° E
-                </p>
+            <div
+                id="location"
+                data-city="Leonding, Austria"
+                data-coordinates="48.26840° N, 14.25177° E"
+            >
+                <p id="city"></p>
+                <p id="seperator">&nbsp;·&nbsp;</p>
+                <a
+                    id="coordinates"
+                    href="https://maps.app.goo.gl/zwXZbedDSsHfvemm7"
+                ></a>
             </div>
         </main>
     </body>
