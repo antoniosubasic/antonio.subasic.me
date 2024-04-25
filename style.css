@@ -2,6 +2,7 @@
 
 :root {
     --primary-background-color: #232323;
+    --secondary-background-color: #2f2f2f;
 
     --primary-foreground-color: #ffffff;
     --secondary-foreground-color: #a0a0a0;
@@ -40,8 +41,7 @@ main,
 }
 
 #time,
-#location p,
-#location a {
+#location > * {
     font-family: var(--secondary-font-family);
     color: var(--tertiary-foreground-color);
     font-size: 0.9rem;
@@ -84,8 +84,9 @@ main,
     gap: 2rem;
 }
 
-#content #social a {
+#content #social > * {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 1.5rem;
@@ -97,6 +98,35 @@ main,
 
 #content #social img[alt="GitHub"] {
     filter: invert(0.5);
+}
+
+#content #social img[alt="Email"] {
+    filter: invert(0.47);
+}
+
+#content #social #copy-message {
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+#content #social #copy-message,
+#content #social #hover-message {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-foreground-color);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    z-index: 1;
+    transition: opacity 0.2s;
+    opacity: 0;
+}
+
+#content #social #copy-message img[alt="checkmark"] {
+    width: 0.75rem;
+    filter: invert(0.9);
 }
 
 #location {
