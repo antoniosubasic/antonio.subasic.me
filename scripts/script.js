@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('city').innerText = location.getAttribute('data-city');
     document.getElementById('coordinates').innerText = location.getAttribute('data-coordinates');
 
-    const email = document.getElementById('email');
-    document.getElementById('hover-message').innerText = email.getAttribute('data-email');
-
     initTime();
     initMediaquery();
     initAnimation();

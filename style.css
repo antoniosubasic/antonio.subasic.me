@@ -110,8 +110,7 @@ main,
     gap: 0.25rem;
 }
 
-#content #social #copy-message,
-#content #social #hover-message {
+#content #social #copy-message {
     display: none;
     position: absolute;
     background-color: var(--secondary-background-color);
