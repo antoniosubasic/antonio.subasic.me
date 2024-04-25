@@ -102,6 +102,7 @@ main,
 
 #content #social img[alt="Email"] {
     filter: invert(0.47);
+    cursor: pointer;
 }
 
 #content #social #copy-message {
