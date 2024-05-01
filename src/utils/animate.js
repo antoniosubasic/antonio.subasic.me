@@ -1,8 +1,6 @@
-import { timeformat } from './time.js';
-
 const duration = 1000;
 
-function animate(element, value) {
+export function animate(element, value) {
     let interval = null;
     let iteration = 0;
 
@@ -22,12 +20,4 @@ function animate(element, value) {
 
         iteration++;
     }, duration / value.length);
-}
-
-export function init() {
-    const location = document.getElementById('location');
-
-    animate(document.getElementById('city'), location.getAttribute('data-city'));
-    animate(document.getElementById('coordinates'), location.getAttribute('data-coordinates'));
-    animate(document.getElementById('time'), new Date().toLocaleTimeString('en-US', timeformat));
 }
