@@ -9,6 +9,7 @@
     <LocationStamp
         name="Leonding, Austria"
         coordinates="48.26840° N, 14.25177° E"
+        coordinatesLink="https://maps.app.goo.gl/DfycVedfNLd7hjBaA"
     />
 </template>
 

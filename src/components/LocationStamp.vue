@@ -4,7 +4,7 @@
         <span id="seperator">·</span>
         <a
             id="coordinates"
-            href="https://maps.app.goo.gl/zwXZbedDSsHfvemm7"
+            :href="coordinatesLink"
             ref="coordinates"
             >{{ coordinates }}</a
         >
@@ -19,6 +19,7 @@ export default {
     props: {
         name: String,
         coordinates: String,
+        coordinatesLink: String,
     },
     mounted() {
         animate(this.$refs.name, this.name);
