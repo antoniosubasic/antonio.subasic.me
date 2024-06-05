@@ -1,0 +1,33 @@
+name: Build ⚒️ and Push 🚀
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch: # allows manual triggering of workflow
+
+permissions:
+    contents: write
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        name: Build ⚒️ and Push 🚀
+        steps:
+            - name: Checkout code 🛎️
+              uses: actions/checkout@v2
+
+            - name: Install dependencies 📦
+              run: npm install
+
+            - name: Build ⚒️
+              run: npm run build
+
+            - name: Push 🚀
+              uses: s0/git-publish-subdir-action@develop
+              env:
+                  REPO: self
+                  BRANCH: build
+                  FOLDER: dist
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+                  MESSAGE: "Build {sha}: {msg}"
