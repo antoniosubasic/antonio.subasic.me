@@ -26,6 +26,11 @@
                     </div>
                 </transition>
             </div>
+            <div id="linkedin">
+                <a :href="'https://linkedin.com/in/' + linkedin">
+                    <img :src="linkedinIcon" alt="LinkedIn" />
+                </a>
+            </div>
         </div>
     </div>
 </template>
@@ -34,6 +39,7 @@
 import githubIcon from "@/assets/github.svg";
 import emailIcon from "@/assets/email.png";
 import checkmarkIcon from "@/assets/checkmark.png";
+import linkedinIcon from "@/assets/linkedin.svg";
 
 export default {
     name: "ProfileCard",
@@ -42,12 +48,14 @@ export default {
         occupation: String,
         github: String,
         email: String,
+        linkedin: String,
     },
     data() {
         return {
             githubIcon,
             emailIcon,
             checkmarkIcon,
+            linkedinIcon,
             showCopyMessage: false,
         };
     },
@@ -114,7 +122,8 @@ h2 {
     filter: invert(0.5);
 }
 
-#email > a > img {
+#email > a > img,
+#linkedin > a > img {
     filter: invert(0.45);
 }
 

@@ -5,6 +5,7 @@
         occupation="Computer Science Student"
         github="antoniosubasic"
         email="antonio@subasic.me"
+        linkedin="subasicantonio"
     />
     <LocationStamp
         name="Leonding, Austria"
