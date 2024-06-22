@@ -43,29 +43,31 @@ const Profile = ({ name, occupation, github, email, linkedin }: ProfileParams) =
                 alt="Profile Picture"
                 className={styles.profilePicture}
             />
-            <h1>{name}</h1>
-            <h2>{occupation}</h2>
-            <div className={styles.socials}>
-                <div className={styles.github}>
-                    <a href={`https://github.com/${github.username}`}>
-                        <img src={githubIcon} alt="GitHub" />
-                    </a>
-                </div>
-                <div className={styles.email}>
-                    <a href={`mailto:${email}`} onClick={e => { e.preventDefault(); copyToClipboard(email); }}>
-                        <img src={emailIcon} alt="Email" />
-                    </a>
-                    {showCopyMessage && (
-                        <div className={`${styles.copyMessage} ${isFadingOut ? styles.fadeOut : ''}`}>
-                            <img src={checkmarkIcon} alt="Checkmark" />
-                            <span>copied</span>
-                        </div>
-                    )}
-                </div>
-                <div className={styles.linkedin}>
-                    <a href={`https://linkedin.com/in/${linkedin.username}`}>
-                        <img src={linkedinIcon} alt="LinkedIn" />
-                    </a>
+            <div className={styles.profileText}>
+                <h1>{name}</h1>
+                <h2>{occupation}</h2>
+                <div className={styles.socials}>
+                    <div className={styles.github}>
+                        <a href={`https://github.com/${github.username}`}>
+                            <img src={githubIcon} alt="GitHub" />
+                        </a>
+                    </div>
+                    <div className={styles.email}>
+                        <a href={`mailto:${email}`} onClick={e => { e.preventDefault(); copyToClipboard(email); }}>
+                            <img src={emailIcon} alt="Email" />
+                        </a>
+                        {showCopyMessage && (
+                            <div className={`${styles.copyMessage} ${isFadingOut ? styles.fadeOut : ''}`}>
+                                <img src={checkmarkIcon} alt="Checkmark" />
+                                <span>copied</span>
+                            </div>
+                        )}
+                    </div>
+                    <div className={styles.linkedin}>
+                        <a href={`https://linkedin.com/in/${linkedin.username}`}>
+                            <img src={linkedinIcon} alt="LinkedIn" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

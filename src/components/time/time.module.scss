@@ -3,3 +3,9 @@
     font-family: var(--secondary-font-family);
     color: var(--tertiary-foreground-color);
 }
+
+@media screen and (max-height: 450px) {
+    .time {
+        display: none;
+    }
+}

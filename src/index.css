@@ -44,3 +44,9 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+
+@media screen and (max-height: 450px) {
+    #root {
+        justify-content: center;
+    }
+}
