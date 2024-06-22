@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import styles from './Time.module.scss';
-import { animate } from '../utils/animate.ts';
+import styles from './time.module.scss';
+import { animate } from '@/utils/animate';
 
 const Time = () => {
     const [currentTime, setCurrentTime] = useState(getCurrentTime());

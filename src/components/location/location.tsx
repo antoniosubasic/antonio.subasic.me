@@ -1,14 +1,14 @@
 import { useEffect, useRef } from 'react';
-import styles from './Location.module.scss';
-import { animate } from '../utils/animate.ts';
+import styles from './location.module.scss';
+import { animate } from '@/utils/animate';
 
-interface LocationProps {
+interface LocationParams {
     name: string;
     coordinates: string;
-    coordinatesLink: string;
+    link: string;
 }
 
-const Location = ({ name, coordinates, coordinatesLink }: LocationProps) => {
+const Location = ({ name, coordinates, link }: LocationParams) => {
     const nameRef = useRef(null);
     const coordinatesRef = useRef(null);
 
@@ -26,7 +26,7 @@ const Location = ({ name, coordinates, coordinatesLink }: LocationProps) => {
         <div className={styles.location}>
             <span className={styles.name} ref={nameRef}>{name}</span>
             <span className={styles.seperator}>·</span>
-            <a className={styles.coordinates} href={coordinatesLink} ref={coordinatesRef}>{coordinates}</a>
+            <a className={styles.coordinates} href={link} ref={coordinatesRef}>{coordinates}</a>
         </div>
     );
 };

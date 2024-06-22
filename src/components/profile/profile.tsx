@@ -1,19 +1,19 @@
 import { useState } from 'react';
-import styles from './Profile.module.scss';
-import githubIcon from '../assets/github.svg';
-import emailIcon from '../assets/email.png';
-import linkedinIcon from '../assets/linkedin.svg';
-import checkmarkIcon from '../assets/checkmark.png';
+import styles from './profile.module.scss';
+import githubIcon from '@/assets/github.svg';
+import emailIcon from '@/assets/email.png';
+import linkedinIcon from '@/assets/linkedin.svg';
+import checkmarkIcon from '@/assets/checkmark.png';
 
-interface ProfileProps {
+interface ProfileParams {
     name: string;
     occupation: string;
-    github: string;
+    github: { username: string; uid: number; };
     email: string;
-    linkedin: string;
+    linkedin: { username: string; };
 }
 
-const Profile = ({ name, occupation, github, email, linkedin }: ProfileProps) => {
+const Profile = ({ name, occupation, github, email, linkedin }: ProfileParams) => {
     const fadeTimeout = 3000; // timeout before fading out the copy-message
     const fadeDuration = 250; // duration of the fade-out animation
 
@@ -39,7 +39,7 @@ const Profile = ({ name, occupation, github, email, linkedin }: ProfileProps) =>
     return (
         <div className={styles.profile}>
             <img
-                src="https://avatars.githubusercontent.com/u/96651154"
+                src={`https://avatars.githubusercontent.com/u/${github.uid}`}
                 alt="Profile Picture"
                 className={styles.profilePicture}
             />
@@ -47,7 +47,7 @@ const Profile = ({ name, occupation, github, email, linkedin }: ProfileProps) =>
             <h2>{occupation}</h2>
             <div className={styles.socials}>
                 <div className={styles.github}>
-                    <a href={`https://github.com/${github}`}>
+                    <a href={`https://github.com/${github.username}`}>
                         <img src={githubIcon} alt="GitHub" />
                     </a>
                 </div>
@@ -63,7 +63,7 @@ const Profile = ({ name, occupation, github, email, linkedin }: ProfileProps) =>
                     )}
                 </div>
                 <div className={styles.linkedin}>
-                    <a href={`https://linkedin.com/in/${linkedin}`}>
+                    <a href={`https://linkedin.com/in/${linkedin.username}`}>
                         <img src={linkedinIcon} alt="LinkedIn" />
                     </a>
                 </div>

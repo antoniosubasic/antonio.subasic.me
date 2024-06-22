@@ -1,6 +1,6 @@
-import Profile from "./Profile/Profile";
-import Time from "./Time/Time";
-import Location from "./Location/Location";
+import Time from "@/components/time/time"
+import Profile from "@/components/profile/profile"
+import Location from "@/components/location/location"
 
 function App() {
     return (
@@ -9,14 +9,14 @@ function App() {
             <Profile
                 name="Antonio Subašić"
                 occupation="Computer Science Student"
-                github="antoniosubasic"
+                github={{ username: "antoniosubasic", uid: 96651154 }}
                 email="antonio@subasic.me"
-                linkedin="subasicantonio"
+                linkedin={{ username: "subasicantonio" }}
             />
             <Location
                 name="Leonding, Austria"
                 coordinates="48.26840° N, 14.25177° E"
-                coordinatesLink="https://maps.app.goo.gl/DfycVedfNLd7hjBaA"
+                link="https://maps.app.goo.gl/DfycVedfNLd7hjBaA"
             />
         </>
     )
