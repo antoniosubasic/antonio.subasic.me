@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-    color: #a0a0a0;
+    color: var(--secondary-foreground-color);
     font-size: 1.25rem;
     font-weight: normal;
     margin: 0;
@@ -59,7 +59,7 @@ h2 {
 
 .copyMessage {
     font-size: 0.75rem;
-    background-color: #2f2f2f;
+    background-color: var(--secondary-background-color);
     margin-top: 3.5rem;
     padding: 0.25rem;
     display: flex;
@@ -72,6 +72,11 @@ h2 {
 
     img {
         width: 0.75rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .copyMessage img {
         filter: invert(0.9);
     }
 }
