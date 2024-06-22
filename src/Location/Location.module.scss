@@ -1,0 +1,25 @@
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.location > * {
+    font-family: var(--stamp-font-family);
+    font-size: 0.9rem;
+    color: var(--stamp-foreground-color);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .location {
+        flex-direction: column;
+        gap: 0.25rem;
+
+        .seperator {
+            display: none;
+        }
+    }
+}

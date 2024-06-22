@@ -1,0 +1,91 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 1.5rem 0 0.6rem 0;
+}
+
+h2 {
+    color: #a0a0a0;
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.profilePicture {
+    height: 7.5rem;
+    border-radius: 100%;
+}
+
+.socials {
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.socials > div,
+.socials > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+}
+
+.github {
+    img {
+        filter: invert(0.5);
+    }
+}
+
+.email,
+.linkedin {
+    img {
+        filter: invert(0.45);
+    }
+}
+
+.copyMessage {
+    font-size: 0.75rem;
+    background-color: #2f2f2f;
+    margin-top: 3.5rem;
+    padding: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 0.25rem;
+    border-radius: 0.25rem;
+    transition: opacity 0.3s ease;
+
+    img {
+        width: 0.75rem;
+        filter: invert(0.9);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 250ms ease-out forwards;
+}

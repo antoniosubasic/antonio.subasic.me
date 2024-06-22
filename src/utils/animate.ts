@@ -1,7 +1,7 @@
 const duration = 1000;
 
-export function animate(element, value) {
-    let interval = null;
+export function animate(element: HTMLElement, value: string) {
+    let interval: number | undefined = undefined;
     let iteration = 0;
 
     interval = setInterval(() => {
