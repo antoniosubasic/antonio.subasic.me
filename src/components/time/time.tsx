@@ -4,6 +4,7 @@ import { animate } from '@/utils/animate';
 
 const Time = () => {
     const [currentTime, setCurrentTime] = useState(getCurrentTime());
+    const [runAnimation, setRunAnimation] = useState(true);
     const timeStampRef = useRef(null);
 
     function getCurrentTime() {
@@ -24,10 +25,11 @@ const Time = () => {
     }, []);
 
     useEffect(() => {
-        if (timeStampRef.current) {
+        if (timeStampRef.current && runAnimation) {
             animate(timeStampRef.current, currentTime);
+            setRunAnimation(false);
         }
-    }, [currentTime]);
+    }, [currentTime, runAnimation]);
 
     return (
         <div className={styles.time} ref={timeStampRef}>
