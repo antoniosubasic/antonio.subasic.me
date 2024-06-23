@@ -1,7 +1,7 @@
-import Time from "@/components/time/time"
-import Profile from "@/components/profile/profile"
-import Location from "@/components/location/location"
-import { useEffect } from "react"
+import Time from "@/components/time/time";
+import Profile from "@/components/profile/profile";
+import Location from "@/components/location/location";
+import { useEffect } from "react";
 
 const App = () => {
     useEffect(() => {
