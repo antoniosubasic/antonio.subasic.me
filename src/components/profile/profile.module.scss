@@ -42,11 +42,15 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2.75rem;
 
     img {
         height: 100%;
         width: 100%;
+    }
+
+    a img {
+        filter: invert(0.5);
     }
 }
 
@@ -56,19 +60,6 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 1.5rem;
-}
-
-.github {
-    img {
-        filter: invert(0.5);
-    }
-}
-
-.email,
-.linkedin {
-    img {
-        filter: invert(0.45);
-    }
 }
 
 .copyMessage {
@@ -91,7 +82,7 @@ h2 {
 
 @media (prefers-color-scheme: dark) {
     .copyMessage img {
-        filter: invert(0.9);
+        filter: invert(1);
     }
 }
 

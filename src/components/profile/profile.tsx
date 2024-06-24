@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import styles from './profile.module.scss';
 import githubIcon from '@/assets/github.svg';
-import emailIcon from '@/assets/email.png';
+import emailIcon from '@/assets/email.svg';
 import linkedinIcon from '@/assets/linkedin.svg';
-import checkmarkIcon from '@/assets/checkmark.png';
+import checkmarkIcon from '@/assets/checkmark.svg';
 
 interface ProfileParams {
     name: string;
