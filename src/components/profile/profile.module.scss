@@ -45,12 +45,12 @@ h2 {
     align-items: center;
     gap: 2.75rem;
 
-    img {
+    svg {
         height: 100%;
         width: 100%;
     }
 
-    a img {
+    a svg {
         filter: invert(0.5);
     }
 }
