@@ -45,7 +45,7 @@ html {
     align-items: center;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 570px) {
     #root {
         justify-content: center;
     }
