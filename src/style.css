@@ -11,6 +11,25 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --linear-gradient-color1: #4285f4;
+  --linear-gradient-color2: #9b72cb;
+  --linear-gradient-color3: #d96570;
+  --linear-gradient-color4: #131314;
+
+  --linear-gradient: linear-gradient(
+    74deg,
+    var(--linear-gradient-color1) 0,
+    var(--linear-gradient-color2) 9%,
+    var(--linear-gradient-color3) 20%,
+    var(--linear-gradient-color3) 24%,
+    var(--linear-gradient-color2) 35%,
+    var(--linear-gradient-color1) 44%,
+    var(--linear-gradient-color2) 50%,
+    var(--linear-gradient-color3) 56%,
+    var(--linear-gradient-color4) 75%,
+    var(--linear-gradient-color4) 100%
+  );
 }
 
 #app {
