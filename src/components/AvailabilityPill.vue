@@ -89,4 +89,28 @@ onMounted(() => {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.4);
 }
+
+@media (prefers-color-scheme: dark) {
+  .pill.available {
+    background-color: #002e00;
+    color: #00ff0d;
+  }
+
+  .pill.unavailable {
+    background-color: #2e0000;
+    color: #ff0d00;
+  }
+
+  .dot.available {
+    background-color: #00ff0d;
+  }
+
+  .dot.unavailable {
+    background-color: #ff0d00;
+  }
+
+  .animate {
+    background: rgba(255, 255, 255, 0.4);
+  }
+}
 </style>

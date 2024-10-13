@@ -54,3 +54,10 @@ body {
     margin: 0 1.5rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #fff;
+    background-color: #000;
+  }
+}
