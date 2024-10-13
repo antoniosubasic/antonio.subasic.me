@@ -4,7 +4,7 @@ defineProps<{ forename: string, surename: string }>()
 
 <template>
   <h1>
-    I'm {{ forename }}, computer science student based in <span>Austria</span>
+    I'm <span class="underline">{{ forename }}</span>, computer science student based in <span class="color">Austria</span>
   </h1>
 </template>
 
@@ -19,12 +19,28 @@ span {
   margin: 0;
 }
 
-span {
+span.color {
   background: var(--linear-gradient);
   background-size: 400% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+span.underline {
+  position: relative;
+  margin-right: 0.2rem;
+}
+
+span.underline::after {
+  content: '';
+  position: absolute;
+  left: -1%;
+  bottom: 6%;
+  width: 102%;
+  height: 7%;
+  background: var(--linear-gradient);
+  background-size: 400% 100%;
 }
 
 @media screen and (max-width: 1400px) {

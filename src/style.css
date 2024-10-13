@@ -37,6 +37,7 @@
   text-align: center;
   padding: 0;
   margin: 0 calc(1rem + 1vw * 7.5);
+  min-width: 250px;
 }
 
 body {
