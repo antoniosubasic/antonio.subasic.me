@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+
+  color-scheme: light dark;
+  color: #000;
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --linear-gradient-color1: #4285f4;
+  --linear-gradient-color2: #9b72cb;
+  --linear-gradient-color3: #d96570;
+  --linear-gradient-color4: #131314;
+
+  --linear-gradient: linear-gradient(
+    74deg,
+    var(--linear-gradient-color1) 0,
+    var(--linear-gradient-color2) 9%,
+    var(--linear-gradient-color3) 20%,
+    var(--linear-gradient-color3) 24%,
+    var(--linear-gradient-color2) 35%,
+    var(--linear-gradient-color1) 44%,
+    var(--linear-gradient-color2) 50%,
+    var(--linear-gradient-color3) 56%,
+    var(--linear-gradient-color4) 75%,
+    var(--linear-gradient-color4) 100%
+  );
+}
+
+#app {
+  max-width: 1280px;
+  text-align: center;
+  padding: 0;
+  margin: 0 calc(1rem + 1vw * 7.5);
+  min-width: 250px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  #app {
+    margin: 0 1.5rem;
+  }
+}
