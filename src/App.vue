@@ -1,12 +1,18 @@
 <script setup lang="ts">
 import Intro from './components/Intro.vue'
 import AvailabilityPill from './components/AvailabilityPill.vue'
+import Taskbar from './components/Taskbar.vue'
 </script>
 
 <template>
   <AvailabilityPill :available="true" availableText="Open for Internships" unavailableText="Currently employed" />
   <Intro class="intro" forename="Antonio" surename="Subašić" />
   <p class="bio">A passionate Computer Science student specializing in software development and problem-solving, with a focus on building efficient, scalable applications and crafting innovative digital solutions.</p>
+  <Taskbar
+    linkedin="subasicantonio"
+    github="antoniosubasic"
+    email="antonio@subasic.me"
+  />
 </template>
 
 <style scoped>
