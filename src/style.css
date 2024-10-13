@@ -36,7 +36,7 @@
   max-width: 1280px;
   text-align: center;
   padding: 0;
-  margin: 0 calc(1rem + 1vw * 7.5);
+  margin: 1rem calc(1rem + 1vw * 7.5);
   min-width: 250px;
 }
 
