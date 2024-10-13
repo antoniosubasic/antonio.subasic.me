@@ -30,4 +30,4 @@ jobs:
                   BRANCH: gh-pages
                   FOLDER: dist
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-                  MESSAGE: "Build {sha}: {msg}"
+                  MESSAGE: "Deployed {sha} to gh-pages"
