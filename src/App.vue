@@ -14,9 +14,22 @@ import Pill from './components/Pill.vue'
   margin: 1.5rem 0;
 }
 
+@media screen and (max-height: 350px) {
+  .intro {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .intro {
+    margin: 0.65rem 0;
+  }
+}
+
 .bio {
   font-size: 1.1rem;
   color: #757575;
+  margin: 0 calc(1rem + 1vw * 4);
 }
 
 @media screen and (max-width: 1000px) {
@@ -25,9 +38,16 @@ import Pill from './components/Pill.vue'
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .bio {
-    font-size: 1rem;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .bio {
+    margin: 0 0.25rem;
   }
 }
 </style>
