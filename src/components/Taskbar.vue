@@ -41,7 +41,7 @@ defineProps<{
   gap: 2rem;
   padding: 12px;
   border-radius: 15px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
 }
 
 .taskbar a {
@@ -57,7 +57,7 @@ defineProps<{
 
 @media (prefers-color-scheme: dark) {
   .taskbar {
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
   }
 
   .taskbar img {
