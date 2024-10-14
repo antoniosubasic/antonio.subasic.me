@@ -50,8 +50,8 @@ defineProps<{
 }
 
 .taskbar img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   object-fit: cover;
 }
 
@@ -72,12 +72,12 @@ defineProps<{
   }
 
   .taskbar img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
 }
 
-@media screen and (max-height: 490px) {
+@media screen and (max-height: 440px) {
   .wrapper {
     display: none;
   }
