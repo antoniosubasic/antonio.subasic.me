@@ -48,6 +48,7 @@ import Taskbar from './components/Taskbar.vue'
   .bio {
     margin: 0 1rem;
     font-size: 0.9rem;
+    line-height: 1.3;
   }
 }
 
